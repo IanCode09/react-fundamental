@@ -21,7 +21,9 @@ function BookList() {
         img = {firstBook.img}
         title = {firstBook.title}
         author = {firstBook.author}
-      />
+      >
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+      </Book>
 
       <Book 
         img = {secondBook.img}
@@ -32,12 +34,13 @@ function BookList() {
   )
 }
 
-const Book = ({ img, title, author}) => {
+const Book = ({ img, title, author, children}) => {
   return (
     <article className='book'>
       <img src={img} alt='book1' style={{width: '200px'}} />
       <h2>{title}</h2>
       <h3>{author}</h3>
+      {children}
     </article>
   )
 }
