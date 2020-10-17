@@ -36,3 +36,20 @@ body {
 .book h3 {
     color: rgb(126, 98, 248);
 }
+
+.btn-primary {
+    background: rgb(233, 67, 136);
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-secondary {
+    background: rgb(230, 100, 14);
+    border: none;
+    padding: 7px 15px;
+    color: white;
+    border-radius: 5px;
+}
